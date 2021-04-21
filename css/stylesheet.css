@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/* this will add a grey background to the navbar, and add a border around it. the 'margin:auto' declaration will center it.
 div.navdiv {
-  color:grey;
+  background-color:grey;
   border:3px solid black;
+  border-radius:3px;
   margin:auto;
 }
 h1 {
@@ -11,4 +14,6 @@ p {
   text-align: center;
 }
 body {
+   font-family: 'Open Sans', sans-serif;
    background-image: url("../background design 2.png");
+}
