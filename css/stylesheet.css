@@ -8,6 +8,7 @@ div.headbar {
     border:3px solid black;
     border-radius:6px;
     border-bottom: 2px solid black;
+    margin: 0 auto;
 }
 
 div.navdiv {
