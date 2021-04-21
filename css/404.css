@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+
+div.navdiv {
+
+}
+
+
+
+
+body {
+   font-family: 'Open Sans', sans-serif;
+   background-image: url("../background design 2.png");
+   text-align: center;
+   background-color:grey;
+   border:3px solid black;
+   border-radius:3px;
+   margin:auto;
+}
