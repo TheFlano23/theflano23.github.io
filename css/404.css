@@ -10,14 +10,17 @@ div.container {
     border-radius:3px; 
 }
 
-/*I used this website (https://www.w3.org/Style/Examples/007/center.en.html#vertical) for the first 3 lines of code*/
-
-
+div.navdiv {
+  background-color:grey;
+  border:3px solid black;
+  border-radius:3px;
+  margin:auto;
+  padding:4px;
+}
 
 body {
    font-family: 'Open Sans', sans-serif;
    background-image: url("../background design 2.png");
    text-align: center;
-
    margin:auto;
 }
