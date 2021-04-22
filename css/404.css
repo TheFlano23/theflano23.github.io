@@ -2,10 +2,12 @@
 
 body {
    font-family: 'Open Sans', sans-serif;
-   background-image: url("../../background design 2.png");
+   background-image: url("../background design 2.png");
    text-align: center;
    color:white;
 }
+
+
 
 div.container {  
     background-color:grey;
