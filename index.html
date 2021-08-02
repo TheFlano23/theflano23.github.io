@@ -1,21 +1,47 @@
+
+
+<!------------------------------------------------------------------
+ * index.html : Assignment Task 1 Website
+ *
+ * Author: Benjamin Flanagan
+ *
+ * Date: 21/4/21 - 14/5/21
+ *
+ * Resources : 
+ * https://www.htmldog.com/guides/html/
+ * https://www.htmldog.com/guides/css/
+ * SDD Textbook by Samuel Davis
+ * W3Schools
+ *
+ * Bibliography can be found in the individual subpages.
+ 
+-------------------------------------------------------------------->
+
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Assignment Website- Index</title>
 		<link rel="stylesheet" href="css/stylesheet.css">
+		<link rel="shortcut icon" href="logo.ico">
 	</head>
 	<body>
-	<div class="headbar">
-		<h1> Assignment Website - Index Page </h1>
-		<div class="navdiv">
-			<nav>
-				<a href="/pages/cpu_storage">CPU and Storage</a> |
-				<a href="/pages/hardware">Hardware Components</a> |
-				<a href="/pages/software">System Software</a>
-			</nav>
+		<div class="header">
+			<h1> Assignment Website - Index Page </h1>
+			<div class="navdiv" id="textpadding">
+				<nav>
+					<p class="selected">Index</p> |
+					<a href="pages/cpu_storage.html">CPU and Storage</a> |
+					<a href="pages/hardware.html">Hardware Components</a> |
+					<a href="pages/software.html">System Software</a>
+				</nav>
+			</div>
 		</div>
-	</div>
-		<h2> What is this?</h2>
-		<p> This is my website for my first assignment task. It has links going to pages going into detail on topics like primary and secondary storage, system software, and more. Click a link above in the navbar to get started.</p>
+		<div class="maindiv">
+			<h2> What is this?</h2>
+			<p>For my SDD assignment, I was tasked with creating a website about the computer which could potentially be an educational tool for Year 9 and 10 students. This is the end result. This website contains pages going into detail about CPUs and types of storage, hardware components and types of system software.</p>
+			<p>In order to start reading, select a topic above in the navbar.  </p>
+		</div>
+	<footer>This website was made by Ben F, 2021 ©</footer>
 	</body>
 </html>
+

@@ -1,34 +1,122 @@
+/*******************************************************************
+
+        File: stylesheet.css - this is the main CSS file for my website.
+
+        Author: Benjamin Flanagan
+
+        Date: 21/04/2021 - 14/05/2021
+
+        Resource sites:
+
+        htmldog.com
+		w3schools.com	https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateX
+		https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+         
+
+******************************************************************/
+
+
+
+
+/*google fonts import*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
-div.headbar {
+/*The main header (the top section with the navbar). */
+div.header {
     display: flex;
-    justify-content: center;
+	justify-content: flex-start;
     align-items: center;
-    background-color:grey;
-    border:3px solid black;
+    background-color:darkgrey;
+    border:2px solid black;
     border-radius:6px;
-    border-bottom: 2px solid black;
     margin: 0 auto;
+	padding-left: 2vw;
 }
-
+/* navbar css (the section with the links). */
 div.navdiv {
-  background-color:grey;
-  border:3px solid black;
-  border-radius:6px;
-  margin:auto;
-  padding:4px;
+	transform:translateX(-30px);
+	background-color:grey;
+	border:3px solid black;
+	border-radius:6px;
+	position: absolute;
+	right: 0;
 }
 
+#textpadding {
+    padding: 10px;
+}
 h1 {
-  text-align: center;
+    text-align: left;
+	/*drop shadow*/
+	text-shadow:
+     3px 3px 0 #000,
+     -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+     1px 1px 0 #000;
   
 }
-
+.bottomrule {
+	padding-top:20px;
+	border-bottom:thin solid white;
+}
+h2 {
+	text-align: center;
+}
 p {
-  text-align: center;
+	text-align:justify;
+}
+img {
+	border:2px solid black;
+	border-radius:15px;
+}
+figcaption {
+	text-align:center;
+	padding:10px;
+	font-style:italic;
 }
 
 body {
    font-family: 'Open Sans', sans-serif;
    background-image: url("../background design 2.png");
+   color:white;
+}
+
+/*The main box which contains the paragraph text and subheadings. It has padding around the sides except the top so it's more closer to the header, a margin for the text, and a border with rounded edges and a transparent background*/
+div.maindiv {
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:20px;
+	margin:30px 10px 10px 10px;
+	border:6px solid black;
+	background:rgba(70,70,70,0.9);
+	border-radius: 15px;
+}
+
+/* The below selector, when applied, will make the text bold and make it display inline with the other links, instead of being in a separate paragraph. I made this for the navbar, so that when you are on a certain page, the corresponding link in the navbar will be unclickable.*/
+
+p.selected {
+	font-weight:bold;
+	display:inline;
+}
+a {
+	color:white;
+	text-decoration:none;
+}
+
+img.smallimg {
+	width:25%;
+	height:25%;
+	margin: 0 auto;
+	display:block;
+}
+/*when someone hovers their mouse over a link, it will go grey and an underline will appear*/
+a:hover {
+  color: rgb(180,180,180);
+  text-decoration:underline;
+}
+
+footer {
+	text-align:center;
+	font-size:10pt;
 }

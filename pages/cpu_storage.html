@@ -1,18 +1,86 @@
+
+<!------------------------------------------------------------------
+ * cpu_storage.html : Assignment Task 1 Website
+ *
+ * Author: Ben Flanagan
+ *
+ * Date: 21/4/21 - 14/5/21
+ *
+ * Resources : 
+ * https://www.htmldog.com/guides/html/
+ * https://www.htmldog.com/guides/css/
+ * https://en.wikipedia.org/wiki/History_of_general-purpose_CPUs
+ * SDD Textbook by Samuel Davis
+ * W3Schools
+ *
+ * Bibliography
+ * These images are not mine, the creators of said photos are listed below.
+ * Intel 4004: Thomas Nguyen, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Intel_C4004.jpg)
+ * 
+ * Stick of RAM: An-d, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Swissbit_2GB_PC2-5300U-555.jpg)
+ *
+ * Solid State Drive: photo: Qurren (talk) Taken with Canon IXY 10S (Digital IXUS 210), CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Super_Talent_2.5in_SATA_SSD_SAM64GM25S.jpg)
+ 
+-------------------------------------------------------------------->
+
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Assignment Website</title>
+		<title>Assignment Website - CPU and Storage</title>
 		<link rel="stylesheet" href="../css/stylesheet.css">
+		<link rel="shortcut icon" href="../logo.ico">
 	</head>
 	<body>
-		<h1> Assignment Website - CPU and Storage </h1>
-		<hr>
-		<div class="navdiv">
-			<nav>
-				<a href="cpu_storage">CPU and Storage</a> |
-				<a href="hardware">Hardware Components</a> |
-				<a href="software">System Software</a>
-			</nav>
+		<div class="header">
+			<h1> Assignment Website - CPU and Storage</h1>
+			<div class="navdiv" id="textpadding">
+				<nav>
+					<a href="../index.html">Index</a> |
+					<p class="selected">CPU and Storage</p> |
+					<a href="hardware.html">Hardware Components</a> |
+					<a href="software.html">System Software</a>
+				</nav>
+			</div>
 		</div>
+		<div class="maindiv">
+			<p> The CPU, primary and secondary storage all play a monumental part in the operation of a computer. The CPU provides the 'brains' of the system, as it is the main component which executes instructions from computer programs, while primary and secondary storage help in retaining data for the CPU to make use of. Without any of these elements, the machine would cease to function.  </p>
+			
+			<h2 class="bottomrule">The CPU</h2>
+			
+			<p>	The CPU, or central processing unit, is one of the main constituents in computers. It is mainly responsible for the control and processing sequence that occurs in the computer. The CPU obtains data from any input devices connected, converts the instructions that have been given by the operator, and then transmits the results to an output device, like a monitor, for example. In order to do all of this, it uses 3 simple components: the arithmetic logic unit (ALU), the control unit (CU), and registers.  Each of these parts cooperate in order for the computer to function.</p>
+
+			<p>	The ALU is the component in the CPU which executes the binary mathematical calculations with the help of registers. They can add numbers in binary, shift them either to the left or the right, or compare two binary numbers. When these tasks are combined, ALUs can add, subtract, multiply and divide, as well as execute logical comparisons like 'less than' or 'equal to'. Some computers have multiple ALUs, which means that they can process these tasks more quickly.</p>
+			
+			<p>	The CU is a component which decodes instructions from whatever language the coder is using to binary, which the ALU can understand. In order for it to do this it has to identify two parts of the instruction, that being the opcode and operands. The opcode instructs the CU on what process is to be performed on the operand, and the operand, which provides the data to be performed on. After it has decoded the instructions, it then directs it to the ALU for execution.</p>
+
+			<p> A register is a small but fast storage unit for the CPU which usually holds either instructions or memory addresses for the CPU to use. There are multiple types of registers, like the program counter, which holds the address of the next instruction awaiting execution, the instruction register, which holds the instruction in machine language waiting for execution, and accumulators, which hold data and any results after processing. </p>
+			
+			<!--Below I have used both the figure and figcaption tags. These allow me to mark up images and add captions below them-->
+			<!--I also have images in the figure tag which are using lazy loading. As far as I know, this means that until the image is on screen it will not be loaded to reduce loading times.-->
+			
+			<figure>
+				<img loading="lazy" class="smallimg" src="../img/Intel_C4004.jpg" alt="An Intel 4004 microprocessor." >
+				<figcaption>An Intel 4004, the first CPU microprocessor ever made. Originally, processors were as big as entire rooms and would accept input from things such as punch cards, but with the development of silicon gate technology and other technology-related advances, engineers were able to convert all of that into the size of a person's fingernail. </figcaption>
+			</figure>
+			
+			<h2 class="bottomrule">Primary and Secondary Storage</h2>
+			
+			
+			<p>There are two types of storage used in computers, that being primary and secondary storage. They are used in the retaining and retrieval of data. It is crucial for a computer to have enough storage, as it would severely limit the amount of data it can hold, thus limiting the amount of operations it can perform. </p>
+			
+			<p>Primary storage is a type of storage strictly used by the CPU. Instructions are stored in primary storage, and are retrieved at any time when it is required. Many devices use primary storage, such as registers and RAM (Random Access Memory), due to their speed and size. However, a downside to this is that they are volatile. Volatility means that if the power is cut during usage, then any data stored will be lost. Some computers have uninterupted power supplies (UPS), which turns on when a dip in voltage is detected and allows the user to save their work and turn off the computer without data loss.</p>
+			
+			<p>Secondary storage is another type of storage which is used by many components. Unlike primary storage, secondary storage is built to retain data for long periods of time, and they are non volatile, so if the power goes out all of the data saved to the storage medium will remain. Nearly all computers have secondary storage, the most common being HDDs (Hard Disk Drives) and SSDs (Solid State Drives). There are also many other forms of non volatile storage, such as CDs, DVDs and flash storage, and more obscure mediums like magnetic tape and microfiche.</p>
+			
+			<figure>
+				<img loading="lazy" class="smallimg" src="../img/ramstick.jpg" alt="Two 2GB DDR2 RAM modules, for use with desktops.">
+				<figcaption>Two 2GB sticks of RAM. This type of primary storage is volatile, which means it will lose its retained data if power to it has been lost.</figcaption>
+				<img loading="lazy" class="smallimg" src="../img/ssd.jpg" alt="A 64GB SATA solid state drive.">
+				<figcaption>A solid state drive (SSD). This form of secondary storage differs from HDDs (hard disk drives) as they have no moving parts, and are much faster than HDDs. However, they don't have as much file space than the average modern hard drive. Also, they are non volatile, meaning it will keep its data if power is disconnected.</figcaption>
+			</figure>
+			
+		</div>
+	<footer>This website was made by Ben F, 2021 ©</footer>
 	</body>
 </html>
+
